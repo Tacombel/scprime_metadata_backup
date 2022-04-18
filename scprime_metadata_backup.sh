@@ -15,7 +15,7 @@ hour=$(date +%H)
 day=$(date +%A)
 
 if (( $hour == 23 )); then
-    tar czf $dest/scprime01-$day.tgz $temp
+    tar czf $dest/scprime-$day.tgz $temp
 else
-    tar czf $dest/scprime01-$hour.tgz $temp
+    tar czf $dest/scprime-$hour.tgz $temp
 fi
