@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Temporary folder. You need to create this folder in the OS
+temp="/home/daniel/temp"
+
+#Where to backup.
+dest="/mnt/SATA2/metadata_backups"
+
+# route to metadata
+metadata="/var/lib/docker/volumes/scprime01_scp-data/_data"
+
+rsync -azvv --exclude consensus/ $metadata $temp
+
+hour=$(date +%H)
+day=$(date +%A)
+
+if (( $hour == 23 )); then
+    tar czf $dest/scprime01-$day.tgz $temp
+else
+    tar czf $dest/scprime01-$hour.tgz $temp
+fi
