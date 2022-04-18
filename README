@@ -22,4 +22,6 @@ $ crontab -e
 
 59 * * * * /home/daniel/scprime_metadata_backup.sh
 
-The script will create a compresed file every hour, and will keep the last one of the day for a week. In the backups folder you will end up having files called scprime-00.tgz up to scprime-22.tgz, and also scprime-monday.tgz to scprime-sunday.tgz
+The script will create a compresed file every hour, and will keep the last one of the day for a week. In the backups folder you will end up having files called
+
+scprime-00.tgz up to scprime-22.tgz, and also scprime-monday.tgz to scprime-sunday.tgz
