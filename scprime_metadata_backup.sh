@@ -3,7 +3,7 @@
 # Temporary folder. You need to create this folder in the OS
 temp="/home/daniel/temp"
 
-#Where to backup.
+# Where to backup.
 dest="/mnt/SATA2/metadata_backups"
 
 # route to metadata
