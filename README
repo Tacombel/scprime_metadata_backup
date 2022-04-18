@@ -1,0 +1,25 @@
+In your system, create a file
+
+$ touch scprime_metadata_backup.sh
+
+open it with a editor
+
+$ nano scprime_metadata_backup.sh
+
+Copy the contents of the file here, edit it to suit your folders and save
+
+Give correct properties
+
+$ chmod 777 scprime_metadata_backup.sh
+
+test it
+
+$ ./scprime_metadata_backup.sh
+
+Add it to the crontab of the user that owns the metadata folder
+
+$ crontab -e
+
+59 * * * * /home/daniel/scprime_metadata_backup.sh
+
+The script will create a compresed file every hour, and will keep the last one of the day for a week. In the backups folder you will end up having files call 
