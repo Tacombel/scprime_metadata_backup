@@ -1,3 +1,5 @@
+This script is for Linux. You can find help to make it in windows here https://youtu.be/lgHW1dVQ67A (Spanish)
+
 In your system, create a file
 
 $ touch scprime_metadata_backup.sh
