@@ -16,6 +16,10 @@ day=$(date +%A)
 
 if (( $hour == 23 )); then
     tar czf $dest/scprime-$day.tgz $temp
+    # optional. Copy to Storj DCS
+    # uplink cp $dest/scprime01-$day.tgz sj://backups
 else
     tar czf $dest/scprime-$hour.tgz $temp
+    # optional. Copy to Storj DCS
+    # uplink cp $dest/scprime01-$day.tgz sj://backups
 fi
