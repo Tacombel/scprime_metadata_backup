@@ -1,24 +1,26 @@
 This script is for Linux. You can find help to make it in windows here https://youtu.be/lgHW1dVQ67A (Spanish)
 
-In your system, create a file
+In your system, create a file.
 
 $ touch scprime_metadata_backup.sh
 
-open it with a editor
+Open it with a editor.
 
 $ nano scprime_metadata_backup.sh
 
-Copy the contents of the file here, edit it to suit your folders and save
+Copy the contents of the file here, edit it to suit your folders and save.
 
-Give correct properties
+Adapt the start and stop commands.
+
+Make the script executable.
 
 $ chmod 777 scprime_metadata_backup.sh
 
-test it
+Test it. Could be you will need to sudo it.
 
 $ ./scprime_metadata_backup.sh
 
-Add it to the crontab of the user that owns the metadata folder
+Add it to the crontab of the user that owns the metadata folder. If it is root you will need to sudo it.
 
 $ crontab -e
 
