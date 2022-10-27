@@ -28,4 +28,4 @@ else
     # uplink cp $dest/scprime01-$day.tgz sj://backups
 fi
 
-echo "Finished metadata backup
+echo "Finished metadata backup"
